@@ -1,0 +1,20 @@
+{
+  "target_folder": "static",
+  "generated_at": "2025-11-08T13:56:25.750716+00:00",
+  "files": [
+    {
+      "type": "file",
+      "name": "static_files.html",
+      "relative_path": "static_files.html",
+      "size_bytes": 17382,
+      "last_modified_at": "2025-11-08T13:56:00+00:00"
+    },
+    {
+      "type": "file",
+      "name": "static_files_info.nocache.json",
+      "relative_path": "static_files_info.nocache.json",
+      "size_bytes": 516,
+      "last_modified_at": "2025-11-08T13:56:00+00:00"
+    }
+  ]
+}
