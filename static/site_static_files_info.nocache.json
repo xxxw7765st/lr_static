@@ -1,20 +1,20 @@
 {
   "target_folder": "static",
-  "generated_at": "2025-11-08T14:00:15.844092+00:00",
+  "generated_at": "2025-11-08T14:04:24.507878+00:00",
   "files": [
     {
       "type": "file",
       "name": "site_static_files.html",
       "relative_path": "site_static_files.html",
       "size_bytes": 17386,
-      "last_modified_at": "2025-11-08T14:00:01+00:00"
+      "last_modified_at": "2025-11-08T14:04:13+00:00"
     },
     {
       "type": "file",
-      "name": ".static_files_info.nocache.json",
-      "relative_path": ".static_files_info.nocache.json",
-      "size_bytes": 518,
-      "last_modified_at": "2025-11-08T14:00:01+00:00"
+      "name": "site_static_files_info.nocache.json",
+      "relative_path": "site_static_files_info.nocache.json",
+      "size_bytes": 528,
+      "last_modified_at": "2025-11-08T14:04:13+00:00"
     }
   ]
 }
