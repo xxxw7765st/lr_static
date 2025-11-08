@@ -8,6 +8,9 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 5
     steps:
       - name: 检出仓库代码
         uses: actions/checkout@v5
