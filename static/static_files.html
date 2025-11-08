@@ -409,7 +409,11 @@
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 打开
               </a>
-              <span class="underline" onclick='copyToClipboard("/${encodeURI(file.relative_path)}")'>
+              <span class="underline" onclick='copyToClipboard("${
+          encodeURI(file.relative_path)
+        }")'>
+                <i class="fa-solid fa-copy"></i>
+              复制
               </span>
             </div>
           </div>
@@ -421,7 +425,7 @@
 
       async function copyToClipboard(str) {
         if (typeof str !== "string" || !str) {
-          return
+          return;
         }
         try {
           await navigator.clipboard.writeText(str);
