@@ -1,0 +1,20 @@
+name: 生成文件信息
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v5
+
+      - name: 执行 Python 脚本
+        run: python folder_struct_to_json.py static ./static/static_files_info.nocache.json
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "ci: gen files info"
+
