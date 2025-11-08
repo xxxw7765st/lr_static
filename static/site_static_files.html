@@ -405,11 +405,11 @@
           <div>
             <div class="text-xs text-gray-400">链接</div>
             <div>
-              <a class="underline" href="${file.relative_path}">
+              <a class="underline visited:test-red-500 hover:no-underline" href="${file.relative_path}">
                 <i class="fas fa-arrow-up-right-from-square"></i>
                 打开
               </a>
-              <span class="ml-4 underline" onclick='copyToClipboard("${location.host}/${
+              <span class="ml-4 underline hover:text-red-500 hover:no-underline" onclick='copyToClipboard("${location.host}/${
           encodeURI(file.relative_path)
         }")'>
                 <i class="fas fa-copy"></i>
