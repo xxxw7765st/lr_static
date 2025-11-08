@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文件浏览器</title>
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" crossorigin></script>
     <!-- Font Awesome 图标 -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin
     >
     <style>
       .file-item, .folder-item {
@@ -242,7 +243,7 @@
         rootLink.textContent = folderData.target_folder;
         rootLink.addEventListener("click", () => {
           pathStack = [];
-          renderBreadcrumb()
+          renderBreadcrumb();
           renderFileList(folderData.files);
         });
         breadcrumb.appendChild(rootLink);
@@ -404,7 +405,12 @@
           <div>
             <div class="text-xs text-gray-400">链接</div>
             <div>
-              <a href="${file.relative_path}">打开</a>
+              <a class="underline" href="${file.relative_path}">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                打开
+              </a>
+              <span class="underline" onclick='copyToClipboard("/${encodeURI(file.relative_path)}")'>
+              </span>
             </div>
           </div>
         </div>
@@ -412,6 +418,18 @@
 
         detailPanel.classList.remove("hidden");
       }
+
+      async function copyToClipboard(str) {
+        if (typeof str !== "string" or !str) {
+          return
+        }
+        try {
+          await navigator.clipboard.writeText(str);
+        } catch (err) {
+          alert(`复制失败：${err.message}`);
+        }
+      }
+      window.copyToClipboard = copyToClipboard;
 
       // 初始化页面
       document.addEventListener("DOMContentLoaded", async () => {
