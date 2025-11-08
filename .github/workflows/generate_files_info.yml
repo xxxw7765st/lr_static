@@ -20,4 +20,9 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "ci: gen files info"
+      - name: Sync data branch
+        run: |
+          git checkout -B data  
+          git reset --hard origin/${{ github.ref_name }}  
+          git push -f origin data  
 
