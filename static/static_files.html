@@ -437,7 +437,7 @@
 
       // 初始化页面
       document.addEventListener("DOMContentLoaded", async () => {
-        const res = await fetch("/static_files_info.nocache.json");
+        const res = await fetch("/.static_files_info.nocache.json");
         folderData = await res.json();
         renderBreadcrumb();
         renderFileList(folderData.files);
