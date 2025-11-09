@@ -1,62 +1,62 @@
 {
   "target_folder": "static",
-  "generated_at": "2025-11-08T14:59:17.472674+00:00",
+  "generated_at": "2025-11-09T03:13:00.359293+00:00",
   "files": [
     {
       "type": "folder",
       "name": "lr",
       "relative_path": "lr",
       "total_size_bytes": 5598814,
-      "last_modified_at": "2025-11-08T14:59:04+00:00",
+      "last_modified_at": "2025-11-09T03:12:48+00:00",
       "children": [
         {
           "type": "folder",
           "name": "welcome",
           "relative_path": "lr/welcome",
           "total_size_bytes": 5598814,
-          "last_modified_at": "2025-11-08T14:59:04+00:00",
+          "last_modified_at": "2025-11-09T03:12:48+00:00",
           "children": [
             {
               "type": "file",
               "name": "normal.jpg",
               "relative_path": "lr/welcome/normal.jpg",
               "size_bytes": 23440,
-              "last_modified_at": "2025-11-08T14:59:04+00:00"
+              "last_modified_at": "2025-11-09T03:12:48+00:00"
             },
             {
               "type": "file",
               "name": "normal_learning_song.mp3",
               "relative_path": "lr/welcome/normal_learning_song.mp3",
               "size_bytes": 601481,
-              "last_modified_at": "2025-11-08T14:59:04+00:00"
+              "last_modified_at": "2025-11-09T03:12:48+00:00"
             },
             {
               "type": "file",
               "name": "winter.jpg",
               "relative_path": "lr/welcome/winter.jpg",
               "size_bytes": 39163,
-              "last_modified_at": "2025-11-08T14:59:04+00:00"
+              "last_modified_at": "2025-11-09T03:12:48+00:00"
             },
             {
               "type": "file",
               "name": "winter.mp4",
               "relative_path": "lr/welcome/winter.mp4",
               "size_bytes": 2467415,
-              "last_modified_at": "2025-11-08T14:59:04+00:00"
+              "last_modified_at": "2025-11-09T03:12:48+00:00"
             },
             {
               "type": "file",
               "name": "winter.mp3",
               "relative_path": "lr/welcome/winter.mp3",
               "size_bytes": 599183,
-              "last_modified_at": "2025-11-08T14:59:04+00:00"
+              "last_modified_at": "2025-11-09T03:12:48+00:00"
             },
             {
               "type": "file",
               "name": "normal.mp4",
               "relative_path": "lr/welcome/normal.mp4",
               "size_bytes": 1868132,
-              "last_modified_at": "2025-11-08T14:59:04+00:00"
+              "last_modified_at": "2025-11-09T03:12:48+00:00"
             }
           ]
         }
@@ -67,14 +67,14 @@
       "name": "site_static_files.html",
       "relative_path": "site_static_files.html",
       "size_bytes": 17486,
-      "last_modified_at": "2025-11-08T14:59:04+00:00"
+      "last_modified_at": "2025-11-09T03:12:48+00:00"
     },
     {
       "type": "file",
       "name": "site_static_files_info.nocache.json",
       "relative_path": "site_static_files_info.nocache.json",
       "size_bytes": 2514,
-      "last_modified_at": "2025-11-08T14:59:04+00:00"
+      "last_modified_at": "2025-11-09T03:12:48+00:00"
     }
   ]
 }
