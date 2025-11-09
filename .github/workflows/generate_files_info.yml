@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: 检出仓库代码
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: 执行 Python 脚本
         run: python folder_struct_to_json.py static ./static/site_static_files_info.nocache.json
