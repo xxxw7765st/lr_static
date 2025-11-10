@@ -119,7 +119,7 @@ def traverse_folder(
             structure.append(
                 {
                     "type": "file",
-                    "name": HASH_PATTERN.sub("", entry),
+                    "name": HASH_PATTERN.sub(".", entry),
                     "relative_path": entry_rel,
                     "size_bytes": size,
                     "last_modified_at": last_modified,
