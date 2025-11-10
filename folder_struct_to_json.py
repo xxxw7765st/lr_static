@@ -1,10 +1,12 @@
 import json
 import os
 import subprocess
+import re
 import sys
 from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
+HASH_PATTERN = re.compile(r"\._\.M[0-9a-z]+\._\.")
 
 def get_git_root(path: str) -> Optional[str]:
     """获取Git仓库根目录，非Git仓库返回None"""
@@ -117,7 +119,7 @@ def traverse_folder(
             structure.append(
                 {
                     "type": "file",
-                    "name": entry,
+                    "name": HASH_PATTERN.sub("", entry),
                     "relative_path": entry_rel,
                     "size_bytes": size,
                     "last_modified_at": last_modified,

@@ -1,17 +1,15 @@
 [[headers]]
-for = "/nocache/*"
-[headers.values]
-Cache-Control = "no-cache"
-
-
-[[headers]]
-for = "/immut/*"
+for = "/asset/*"
 [headers.values]
 Cache-Control = "public, max-age=2592000, immutable"
 
+[[headers]]
+for = "*.nocache.*"
+[headers.values]
+Cache-Control = "no-cache"
 
 [[headers]]
-for = "/cache/*"
+for = ".cache.*"
 [headers.values]
 Cache-Control = "public, max-age=3600, stale-while-revalidate=31536000"
 s-maxage = "3600"

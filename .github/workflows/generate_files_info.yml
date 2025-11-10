@@ -17,14 +17,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 执行 Python 脚本
-        run: python folder_struct_to_json.py static ./static/nocache/site_static_files_info.nocache.json
+      - name: 计算 md5
+        run: python calc_md5.py
+
+      - name: 生成文件结构
+        run: python folder_struct_to_json.py static ./static/site_static_files_info.nocache.json
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "ci: gen files info"
       - name: Sync data branch
         run: |
-          git checkout -B data  
-          git reset --hard origin/${{ github.ref_name }}  
-          git push -f origin data  
-
+          git checkout -B data
+          git reset --hard origin/${{ github.ref_name }}
+          git push -f origin data
