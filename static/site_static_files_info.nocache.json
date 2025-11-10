@@ -1,6 +1,6 @@
 {
   "target_folder": "static",
-  "generated_at": "2025-11-10T08:52:35.639538+00:00",
+  "generated_at": "2025-11-10T08:54:09.583411+00:00",
   "files": [
     {
       "type": "file",
@@ -13,8 +13,8 @@
       "type": "file",
       "name": "site_static_files_info.nocache.json",
       "relative_path": "site_static_files_info.nocache.json",
-      "size_bytes": 3257,
-      "last_modified_at": "2025-11-10T08:52:14+00:00"
+      "size_bytes": 3137,
+      "last_modified_at": "2025-11-10T08:52:36+00:00"
     },
     {
       "type": "folder",
@@ -39,42 +39,42 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "normal_learning_songmp3",
+                  "name": "normal_learning_song.mp3",
                   "relative_path": "asset/lr/welcome/normal_learning_song._.Mpn7t4zzgaffyt0e8._.mp3",
                   "size_bytes": 601481,
                   "last_modified_at": "2025-11-10T08:52:14+00:00"
                 },
                 {
                   "type": "file",
-                  "name": "wintermp4",
+                  "name": "winter.mp4",
                   "relative_path": "asset/lr/welcome/winter._.Many8w1ubf0hk08kg._.mp4",
                   "size_bytes": 2467415,
                   "last_modified_at": "2025-11-10T08:52:14+00:00"
                 },
                 {
                   "type": "file",
-                  "name": "winterjpg",
+                  "name": "winter.jpg",
                   "relative_path": "asset/lr/welcome/winter._.Md7xvlkgpueytknq1._.jpg",
                   "size_bytes": 39163,
                   "last_modified_at": "2025-11-10T08:52:14+00:00"
                 },
                 {
                   "type": "file",
-                  "name": "wintermp3",
+                  "name": "winter.mp3",
                   "relative_path": "asset/lr/welcome/winter._.M4gn7ut5podyev713._.mp3",
                   "size_bytes": 599183,
                   "last_modified_at": "2025-11-10T08:52:14+00:00"
                 },
                 {
                   "type": "file",
-                  "name": "normalmp4",
+                  "name": "normal.mp4",
                   "relative_path": "asset/lr/welcome/normal._.M1vieghh7wv4k0i9y._.mp4",
                   "size_bytes": 1868132,
                   "last_modified_at": "2025-11-10T08:52:14+00:00"
                 },
                 {
                   "type": "file",
-                  "name": "normaljpg",
+                  "name": "normal.jpg",
                   "relative_path": "asset/lr/welcome/normal._.M2xl3ylsdmihgzr58._.jpg",
                   "size_bytes": 23440,
                   "last_modified_at": "2025-11-10T08:52:14+00:00"
